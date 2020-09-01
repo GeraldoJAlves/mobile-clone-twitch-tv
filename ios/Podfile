@@ -8,6 +8,8 @@ target 'MobileCloneTwitchTv' do
 
   use_react_native!(:path => config["reactNativePath"])
 
+  pod 'react-native-statusbar', :path => '../node_modules/@react-native-community/status-bar'
+
   target 'MobileCloneTwitchTvTests' do
     inherit! :complete
     # Pods for testing
