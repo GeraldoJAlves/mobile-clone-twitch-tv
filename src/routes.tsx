@@ -6,6 +6,8 @@ import ComingSoon from './pages/ComingSoon';
 import Ionicons  from 'react-native-vector-icons/Ionicons';
 import colors from './styles/color';
 
+Ionicons.loadFont();
+
 const { Navigator, Screen } = createBottomTabNavigator();
 
 const Routes: React.FC = () => (
