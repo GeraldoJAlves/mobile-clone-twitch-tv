@@ -1,5 +1,6 @@
 import React from 'react';
-import {NavigationContainer, TabActions} from '@react-navigation/native';
+import { Platform } from 'react-native';
+import {NavigationContainer} from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import Following from './pages/Following';
 import ComingSoon from './pages/ComingSoon';
@@ -17,7 +18,7 @@ const Routes: React.FC = () => (
     <Navigator
       tabBarOptions={{
         style: {
-          height: 100,
+          height: Platform.OS == 'ios' ? 100 : 60,
           backgroundColor: colors.primary,
           borderTopWidth: 0,
         },

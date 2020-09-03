@@ -5,40 +5,40 @@ import colors from '../../styles/color';
 export const List = styled.ScrollView.attrs({
   horizontal: true
 })`
-  flex-direction: row;
+  padding: 8px 0 24px;
 `;
 
-export const CategoryContainer = styled.View`
-  justify-content: center;
-  align-items: center;
+export const CategoryContainer = styled.TouchableOpacity`
   margin-right: 10px;
-  width: 100px;
-  height: 180px;
 `;
 
 export const CategoryImage = styled.Image`
-  width: 100px;
-  height: 150px;
+  width: 98px;
+  height: 138px;
 `;
 
 export const CategoryName = styled.Text`
+  margin-top: 5px;
   color: ${colors.black};
+  max-width: 98px;
+  font-weight: bold;
+  font-size: 13.5px;
 `;
 
 export const CategoryStatus = styled.View`
   flex-direction: row;
   align-items: center;
-  justify-content: center;
 `;
 
 export const RedCircle = styled.View`
-  width: 10px;
-  height: 10px;
-  border-radius: 10px;
+  width: 9px;
+  height: 9px;
+  border-radius: 5px;
   background-color: ${colors.red};
 `;
 
 export const Info = styled.Text`
-  padding-left: 5px;
+  margin-left: 4px;
+  padding-bottom: 1px;
   color: ${colors.black};
 `;
