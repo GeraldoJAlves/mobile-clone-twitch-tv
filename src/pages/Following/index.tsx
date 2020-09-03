@@ -1,14 +1,15 @@
 import React from 'react';
-import { Text } from 'react-native';
 
-import { Container, Wrapper, Main } from './styles';
+import {Container, Wrapper, Main} from './styles';
+import Header from '../../components/Header';
 
 const Following: React.FC = () => {
   return (
     <Wrapper>
-    <Container>
-      <Main />
-    </Container>
+      <Container>
+        <Header />
+        <Main />
+      </Container>
     </Wrapper>
   );
 };
