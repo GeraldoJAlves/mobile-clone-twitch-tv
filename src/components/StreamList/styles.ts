@@ -2,27 +2,35 @@ import styled from 'styled-components/native';
 
 import colors from '../../styles/color';
 
-export const List = styled.View``;
-
-export const StreamContainer = styled.View`
-  flex-direction: row;
-  margin-bottom: 10px;
+export const List = styled.View`
+  padding: 8px 0 24px;
 `;
 
-export const StreamThumbnail = styled.Image`
-  width: 100px;
-  height: 100px;
+export const StreamContainer = styled.TouchableOpacity`
+  flex-direction: row;
+  flex: 1;
+  margin-bottom: 24px;
+  margin-right: 24px;
 `;
 
 export const StreamColumn = styled.View`
-  padding-left: 10px;
+  margin-left: 11px;
+  flex: 1;
+`;
+
+export const StreamThumbnail = styled.Image`
+  width: 119px;
+  height: 66px;
+`;
+
+export const StreamRow = styled.View`
+  height: 66px;
   justify-content: space-between;
 `;
 
-export const StreamRow = styled.View``;
-
 export const StreamHeader = styled.View`
   flex-direction: row;
+  align-items: center;
 `;
 
 export const StreamAvatar = styled.View`
@@ -47,16 +55,18 @@ export const StreamCategory = styled.Text`
 `;
 
 export const TagRow = styled.View`
-  flex-direction: row
+  margin-top: 8px;
+  flex-direction: row;
 `;
 
 export const TagView = styled.View`
   background-color: ${colors.tag};
   border-radius: 10px;
-  padding: 2px 5px;
+  padding: 2px 8px;
   margin-right: 5px;
 `;
 
 export const TagText = styled.Text`
   color: ${colors.black};
+  font-size: 13px;
 `;

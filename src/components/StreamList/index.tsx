@@ -14,7 +14,7 @@ import {
   StreamCategory,
   TagRow,
   TagView,
-  TagText
+  TagText,
 } from './styles';
 
 import sourceStreamThumbnail from '../../images/stream_thumbnail.jpg';
@@ -30,19 +30,15 @@ const StreamList: React.FC = () => {
               <StreamAvatar />
               <StreamUserName numberOfLines={1}>geraldo_alves</StreamUserName>
             </StreamHeader>
+            <StreamDescription numberOfLines={1}>Twitch UI Clone</StreamDescription>
+            <StreamCategory numberOfLines={1}>Tecnologia</StreamCategory>
           </StreamRow>
-          <StreamDescription>Twitch UI Clone</StreamDescription>
-          <StreamCategory>Tecnologia</StreamCategory>
           <TagRow>
             <TagView>
-              <TagText>
-                Portugues
-              </TagText>
+              <TagText>Portugues</TagText>
             </TagView>
             <TagView>
-              <TagText>
-                Desenvolvimento
-              </TagText>
+              <TagText>Desenvolvimento</TagText>
             </TagView>
           </TagRow>
         </StreamColumn>
@@ -52,10 +48,6 @@ const StreamList: React.FC = () => {
 
   return (
     <List>
-      <StreamItem />
-      <StreamItem />
-      <StreamItem />
-      <StreamItem />
       <StreamItem />
       <StreamItem />
       <StreamItem />

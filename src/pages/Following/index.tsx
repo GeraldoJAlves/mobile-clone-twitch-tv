@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, FlatList, Text} from 'react-native';
+import {FlatList} from 'react-native';
 
 import {Container, Wrapper, Main} from './styles';
 
@@ -8,6 +8,7 @@ import Heading from '../../components/Heading';
 import Title from '../../components/Title';
 import CategoryList from '../../components/CategoryList';
 import StreamList from '../../components/StreamList';
+import ChannelList from '../../components/ChannelList';
 interface Item {
   key: string;
   render: () => JSX.Element;
@@ -38,13 +39,13 @@ const Following: React.FC = () => {
         render: () => <Title>Continue Watching</Title>,
         isTitle: true,
       },
-      {key: 'C3', render: () => <View />},
+      {key: 'C3', render: () => <StreamList />},
       {
         key: 'OFFLINE_CHANNELS',
         render: () => <Title>Offline Channels</Title>,
         isTitle: true,
       },
-      {key: 'C4', render: () => <View />},
+      {key: 'C4', render: () => <ChannelList />},
     ];
 
     const indices: number[] = [];
@@ -64,12 +65,12 @@ const Following: React.FC = () => {
         <Main>
           <FlatList<Item>
             data={data}
-            renderItem={({item})=>item.render()}
-            keyExtractor={item => item.key}
+            renderItem={({item}) => item.render()}
+            keyExtractor={(item) => item.key}
             stickyHeaderIndices={indices}
             onRefresh={() => {}}
             refreshing={false}
-            />
+          />
         </Main>
       </Container>
     </Wrapper>
