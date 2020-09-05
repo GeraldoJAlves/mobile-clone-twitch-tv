@@ -17,3 +17,10 @@ Mobile Clone - TWitchTV
 
 - Organização de components no React Native.
 - Criação de componentes no React Native.
+
+## Resultado
+
+Android e Iphone
+
+![](https://github.com/GeraldoJAlves/mobile-clone-twitch-tv/blob/master/result/demo.gif)
+
